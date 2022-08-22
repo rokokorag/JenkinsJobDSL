@@ -18,8 +18,8 @@ job('ejemplo2-job-DSL') {
     		shell("bash jobscript.sh")
     	}
   	publishers {
-      		mailer('macloujulian@gmail.com', true, true)
-      		slackNotifier {
+      		mailer('racevedo@nuxiba.com', true, true)
+      		/*slackNotifier {
 		  notifyAborted(true)
 		  notifyEveryFailure(true)
 		  notifyNotBuilt(false)
@@ -35,6 +35,6 @@ job('ejemplo2-job-DSL') {
 		  commitInfoChoice('NONE')
 		  teamDomain(null)
 		  authToken(null)
-        	}
+        	}*/
     	}
 }
